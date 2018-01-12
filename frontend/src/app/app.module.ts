@@ -14,7 +14,10 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent, NavbarComponent } from './components';
+import { HomeComponent, NavbarComponent , ContactComponent} from './components';
+
+//Routes
+import {RouterModule, Routes} from'@angular/router';
 
 // used to create fake backend
 import { fakeBackendProvider } from './service';
@@ -25,7 +28,8 @@ import { BaseRequestOptions } from '@angular/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactComponent
   ],
   imports: [
     AppRoutingModule,
@@ -36,6 +40,10 @@ import { BaseRequestOptions } from '@angular/http';
     HttpModule,
     ReactiveFormsModule,
     SuiModule,
+    RouterModule.forRoot([
+      {path:'home' , component:HomeComponent},
+      {path:'contact', component:ContactComponent}
+    ])
   ],
   providers: [
     AppRoutingModule,
