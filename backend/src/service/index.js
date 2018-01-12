@@ -4,14 +4,5 @@ const legume = require('./legume');
 const lactate = require('./lactate');
 
 module.exports = {
-  user,
-};
-module.exports = {
-  carne,
-};
-module.exports = {
-  legume,
-};
-module.exports = {
-  lactate,
+  user,carne,legume,lactate
 };
