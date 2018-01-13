@@ -1,36 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-  padding-top: 0;
-  margin: 0; 
-}
-nav {
-  width: 100%;
-  background: #FFFFFF;
-  height: 65px;
-  font-size: 50;
-}
-
-nav ul {
-  list-style: none;
+body {
   padding: 0;
   margin: 0;
-  height: 100%;
-  font-size: 50;
+  background-size: 100% 100%;
+    background-image: url("http://s1.1zoom.net/big3/381/Still-life_Meat_products_497239.jpg");
+    background-color: rgba(245, 222, 179, 0.5);
+}
+small {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
+h1 {
+  font-family:"Arial Black", Gadget, sans-serif;
+
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
+}
+
+h2 {
+  background: white;
+  background-color: rgba(245, 222, 179, 0);
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 0;
+  color: inherit;
+
+}
+.center {
+  text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  margin: 0 auto;
+  align-content: center;
+  background: black;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+    align-content: center;
+}
 nav ul li {
   display: inline-block;
-  margin-right: -4px;
-  width: 25%;
-  height: 100%;
-  font-size: 50;
+
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
 }
 
-nav ul li a {
-  color: rgba(152,116,170,0.65);
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: center;
-  height: 100%; 
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #000;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
 }
