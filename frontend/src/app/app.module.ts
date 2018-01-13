@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent, NavbarComponent , ContactComponent} from './components';
+import { HomeComponent, NavbarComponent , BuyComponent} from './components';
 
 //Routes
 import {RouterModule, Routes} from'@angular/router';
@@ -29,7 +29,7 @@ import { BaseRequestOptions } from '@angular/http';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ContactComponent
+    BuyComponent
   ],
   imports: [
     AppRoutingModule,
@@ -42,7 +42,7 @@ import { BaseRequestOptions } from '@angular/http';
     SuiModule,
     RouterModule.forRoot([
       {path:'home' , component:HomeComponent},
-      {path:'contact', component:ContactComponent}
+      {path:'buy', component:BuyComponent}
     ])
   ],
   providers: [
