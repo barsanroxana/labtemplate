@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent, NavbarComponent , BuyComponent} from './components';
+import { HomeComponent, NavbarComponent , BuyComponent, GalleryComponent, ImageDetailComponent} from './components';
 
 //Routes
 import {RouterModule, Routes} from'@angular/router';
@@ -23,13 +23,19 @@ import {RouterModule, Routes} from'@angular/router';
 import { fakeBackendProvider } from './service';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
+import { ImageService } from './components/image/shared/image.service';
+import {ImageFilterPipe} from './components/image/shared/filter.pipe'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    BuyComponent
+    BuyComponent,
+    GalleryComponent,
+    ImageDetailComponent, 
+    ImageFilterPipe
+
   ],
   imports: [
     AppRoutingModule,
@@ -42,12 +48,15 @@ import { BaseRequestOptions } from '@angular/http';
     SuiModule,
     RouterModule.forRoot([
       {path:'home' , component:HomeComponent},
-      {path:'buy', component:BuyComponent}
+      {path:'buy', component:BuyComponent},
+      {path: 'image/:id', component : ImageDetailComponent},
     ])
   ],
   providers: [
     AppRoutingModule,
     ApiService,
+    ImageService,
+    ImageFilterPipe
     // providers used to create fake backend
     // fakeBackendProvider,
     // MockBackend,
