@@ -28,11 +28,13 @@ var user = require('./src/rest/user');
 var carne = require('./src/rest/carne');
 var legume = require('./src/rest/legume');
 var lactate = require('./src/rest/lactate');
+var fructe = require('./src/rest/fructe');
 app.use('/api', index);
 app.use('/api/user', user);
 app.use('/api/carne', carne);
 app.use('/api/legume', legume);
 app.use('/api/lactate', lactate);
+app.use('/api/fructe', fructe);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
