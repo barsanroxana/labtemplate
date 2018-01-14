@@ -35,5 +35,12 @@ li{
  width: 100%;
 	
 }
+.center {
+    padding: 50px 0;
+    
+}
+ .color{
+	background-color:  rgba(15, 104, 12, 0.678);
+ }
 
 

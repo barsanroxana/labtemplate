@@ -1,10 +1,14 @@
 <div class="divCenterHome">
     <div class="row" class="colorNav">
-        <button  class="btn btn-lg btn-info" [class.active] = "filterBy == 'all'"(click)= "filterBy='all'">Toate Categoriile</button>
+        <div class="center">
+           
+        <button  class="color" class="btn btn-lg btn-info" [class.active] = "filterBy == 'all'"(click)= "filterBy='all'">Toate Categoriile</button>
         <button  class="btn btn-lg btn-info" [class.active] = "filterBy == 'Carne'"(click)= "filterBy='Carne'" >Carne</button>
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Fructe'"(click)= "filterBy='Fructe'">Fructe</button>
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Legume'"(click)= "filterBy='Legume'">Legume</button>
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Lactate'"(click)= "filterBy='Lactate'">Lactate</button>
+            
+         </div>
     </div>
         <ul id="thumbnailsList" *ngFor="let image of ( visibleImages | imageFilter:filterBy)">
             <li>
@@ -20,7 +24,7 @@
                                 {{image.numeProdus}}
                              </p>
                              <p class="text">
-                                 Pret : {{image.pret}} lei
+                                 Pret : {{image.pret}} lei/kg
                             </p>
                             <input type="image" src="assets/img/adaugaInCos.png" />
 
