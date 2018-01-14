@@ -17,6 +17,19 @@ li{
 	background: rgba(0, 0, 0, 0.6);
 	width: 80%;
 }
+.text{
+	color: white;
+}
+.container {
+    text-align: center;
+    color: white;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+	right: 16px;
+}
 
 .colorNav{
  width: 100%;

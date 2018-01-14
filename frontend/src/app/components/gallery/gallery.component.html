@@ -5,12 +5,35 @@
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Fructe'"(click)= "filterBy='Fructe'">Fructe</button>
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Legume'"(click)= "filterBy='Legume'">Legume</button>
         <button class="btn btn-lg btn-info" [class.active] = "filterBy == 'Lactate'"(click)= "filterBy='Lactate'">Lactate</button>
-        <ul id="thumbnailsList">
-            <li *ngFor="let image of ( visibleImages | imageFilter:filterBy)" >
-                <a [routerLink] = "['/image' , image.id]">
-                <img src="{{image.url}}" class = "tn" width="210" height="170">
-            </a>
-            </li>
-        </ul>
     </div>
+        <ul id="thumbnailsList" *ngFor="let image of ( visibleImages | imageFilter:filterBy)">
+            <li>
+                <div class="col-sm-4" >
+                    <div class="div1">
+                                <img src="{{image.url}}" class = "tn" width="210" height="170">
+                    </div>
+                </div>
+                      
+                <div class="col-sm-4" >
+                    <div class="div2">
+                            <p class="text">
+                                {{image.numeProdus}}
+                             </p>
+                             <p class="text">
+                                 Pret : {{image.pret}} lei
+                            </p>
+                    </div>
+                 </div>
+                      
+                <div class="col-sm-4">
+                    <div class="div2">
+                      <input type="image" src="assets/img/adaugaInCos.png" />
+                    </div>
+                </div>
+                
+           
+            </li>
+        
+        </ul>
+    
     </div>
