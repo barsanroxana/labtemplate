@@ -5,7 +5,7 @@ var legume = require('../service/').legume;
 router.get('/', legume.list);
 router.get('/:id', legume.findById);
 router.get('/delete/:id', legume.delete);
-router.post('/', legume.create);
+router.post('/create', legume.create);
 router.put('/:id', legume.update);
 
 module.exports = router;
