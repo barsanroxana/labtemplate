@@ -1,5 +1,6 @@
-ul{ padding: 0; width: 1200px; margin: 20px auto }
-li{display : inline;}
+ul{ float: left;padding: 0; width: 1200px; margin: 20px auto }
+li{
+	display : inline;}
 
 .tn{
     margin: 6px;
@@ -14,9 +15,23 @@ li{display : inline;}
 	height: 950px;
 	background: rgb(0, 0, 0); 
 	background: rgba(0, 0, 0, 0.6);
+	width: 80%;
+}
+.text{
+	color: white;
+}
+.container {
+    text-align: center;
+    color: white;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+	right: 16px;
 }
 
 .colorNav{
- 
+ width: 100%;
 	
 }

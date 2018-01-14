@@ -1,3 +1,35 @@
+.contactContainer {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.left {
+    width: 3%;
+    height: 400px;
+    
+    float: left;
+}
+.right {
+    margin-left: 50%;
+    height: 400px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+textarea{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    width: 96%;
+}
+button{
+    color: black;
+    font-weight: bold;
+    align-self: center;
+}
 div.icons{
   font-size: 400%;
   text-align: center;
