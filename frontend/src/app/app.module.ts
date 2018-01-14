@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent, NavbarComponent , BuyComponent, ContactComponent,PhotosComponent, GalleryComponent, ImageDetailComponent} from './components';
+import { HomeComponent, NavbarComponent , BuyComponent, ContactComponent,PhotosComponent,AboutComponent, GalleryComponent, ImageDetailComponent} from './components';
 
 //Routes
 import {RouterModule, Routes} from'@angular/router';
@@ -31,6 +31,7 @@ import {ImageFilterPipe} from './components/image/shared/filter.pipe';
     AppComponent,
     HomeComponent,
     ContactComponent,
+    AboutComponent,
     PhotosComponent,
     NavbarComponent,
     BuyComponent,
