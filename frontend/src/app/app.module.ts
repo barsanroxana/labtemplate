@@ -14,7 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { HomeComponent, NavbarComponent , BuyComponent, GalleryComponent, ImageDetailComponent} from './components';
+import { HomeComponent, NavbarComponent , BuyComponent, ContactComponent, GalleryComponent, ImageDetailComponent} from './components';
 
 //Routes
 import {RouterModule, Routes} from'@angular/router';
@@ -30,6 +30,7 @@ import {ImageFilterPipe} from './components/image/shared/filter.pipe';
   declarations: [
     AppComponent,
     HomeComponent,
+    ContactComponent,
     NavbarComponent,
     BuyComponent,
     GalleryComponent,
@@ -49,6 +50,7 @@ import {ImageFilterPipe} from './components/image/shared/filter.pipe';
     RouterModule.forRoot([
       {path:'home' , component:HomeComponent},
       {path:'buy', component:BuyComponent},
+      {path:'contact', component:ContactComponent},
       {path: 'image/:id', component : ImageDetailComponent},
     ])
   ],
