@@ -12,16 +12,16 @@ export class ImageService{
         return IMAGES.slice(0).find(image => image.id == id)
     }
 }
-
-// {
-//     this.apiService.get('api/user/1+" "+').subscribe(res => {
-//       this.user = res.firstName;
-//     });
-//   }
 const IMAGES = [
     {"id" : 1, "category": "Carne" ,"numeProdus": "Pulpe","cantitatete" : 1, "pret": 20 ,  "url" : "assets/img/carne_01.jpg"},
-    {"id" : 2, "category": "Fructe" ,"numeProdus": "Mar","cantitatete" : 10, "pret": 20 , "url" : "assets/img/fructe_01.jpg"},
-    {"id" : 3, "category": "Legume" ,"numeProdus": "Morcov","cantitatete" : 12, "pret": 20 , "url" : "assets/img/legume_01.jpg"},
-    {"id" : 4, "category": "Lactate" ,"numeProdus": "Branza", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/lactate_01.jpg"},
-    {"id" : 5, "category": "Carne" ,"numeProdus": "Piept pui", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/carne_02.jpg"}
+    {"id" : 2, "category": "Fructe" ,"numeProdus": "Mar","cantitatete" : 10, "pret": 2 , "url" : "assets/img/fructe_01.jpg"},
+    {"id" : 3, "category": "Legume" ,"numeProdus": "Morcov","cantitatete" : 12, "pret": 1 , "url" : "assets/img/legume_01.jpg"},
+    {"id" : 4, "category": "Lactate" ,"numeProdus": "Branza", "cantitatete" : 15, "pret": 15 ,"url" : "assets/img/lactate_01.jpg"},
+    {"id" : 5, "category": "Carne" ,"numeProdus": "Piept pui", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/carne_02.jpg"},
+    {"id" : 7, "category": "Fructe" ,"numeProdus": "Pere","cantitatete" : 1, "pret": 8 ,  "url" : "assets/img/fructe_02.png"},
+    {"id" : 8, "category": "Fructe" ,"numeProdus": "Capsuni","cantitatete" : 10, "pret": 8 , "url" : "assets/img/fructe_03.jpg"},
+    {"id" : 9, "category": "Legume" ,"numeProdus": "Rosii","cantitatete" : 12, "pret": 2 , "url" : "assets/img/legume_02.jpg"},
+    {"id" : 10, "category": "Lactate" ,"numeProdus": "Lapte", "cantitatete" : 15, "pret": 3 ,"url" : "assets/img/lactate_02.jpg"},
+    {"id" : 11, "category": "Lactate" ,"numeProdus": "Lapte Batut", "cantitatete" : 15, "pret": 5 ,"url" : "assets/img/lactate_03.jpg"},
+    {"id" : 6, "category": "Legume" ,"numeProdus": "Castraveti","cantitatete" : 10, "pret": 2 , "url" : "assets/img/legume_03.jpg"},
 ]
