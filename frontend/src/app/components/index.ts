@@ -4,3 +4,4 @@ export * from './gallery/gallery.component';
 export * from './image/image-detail.component';
 export * from './layout/navbar/navbar.component';
 export * from './pages/contact/contact.component';
+export * from './pages/photos/photos.component';
