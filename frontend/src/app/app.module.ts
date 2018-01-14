@@ -54,6 +54,7 @@ import {ImageFilterPipe} from './components/image/shared/filter.pipe';
       {path:'buy', component:BuyComponent},
       {path:'contact', component:ContactComponent},
        {path:'photos', component:PhotosComponent},
+       {path:'about', component:AboutComponent},
       {path: 'image/:id', component : ImageDetailComponent},
     ])
   ],
