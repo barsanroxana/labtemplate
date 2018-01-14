@@ -15,8 +15,16 @@ li{display : inline;}
 	background: rgb(0, 0, 0); 
 	background: rgba(0, 0, 0, 0.6);
 }
+.text{
+	color: white;
+}
+.container {
+    text-align: center;
+    color: white;
+}
 
-.colorNav{
- 
-	
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 }
