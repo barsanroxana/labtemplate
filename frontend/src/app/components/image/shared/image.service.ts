@@ -22,6 +22,6 @@ const IMAGES = [
     {"id" : 1, "category": "Carne" ,"numeProdus": "Pulpe","cantitatete" : 1, "pret": 20 ,  "url" : "assets/img/carne_01.jpg"},
     {"id" : 2, "category": "Fructe" ,"numeProdus": "Mar","cantitatete" : 10, "pret": 20 , "url" : "assets/img/fructe_01.jpg"},
     {"id" : 3, "category": "Legume" ,"numeProdus": "Morcov","cantitatete" : 12, "pret": 20 , "url" : "assets/img/legume_01.jpg"},
-    {"id" : 4, "category": "Lactate" ,"numeProdus": "Branza", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/lactate_01.jpg"}
-
+    {"id" : 4, "category": "Lactate" ,"numeProdus": "Branza", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/lactate_01.jpg"},
+    {"id" : 5, "category": "Carne" ,"numeProdus": "Piept pui", "cantitatete" : 15, "pret": 20 ,"url" : "assets/img/carne_02.jpg"}
 ]
