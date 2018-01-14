@@ -3,34 +3,34 @@
 	margin-bottom: 20px;
 	margin-right: 100px;
 	margin-left: 100px;
-	height: 1050px;
+	height: 1070px;
 	background: rgb(0, 0, 0); 
 	background: rgba(0, 0, 0, 0.6);
 }
 
 .div1{
     background: rgb(110, 56, 4); 
-    background: rgba(255, 255, 6, 0.39);
-    height: 360px;
-    margin-top: 20px;
+    background: rgba(255, 168, 6, 0.582);
+    height: 370px;
+    margin-top: 30px;
 }
 .div2{
-    margin-top: 20px;
-    height: 360px;
-    background: rgb(110, 56, 4); 
-    background: rgba(255, 255, 6, 0.39);
-}
-.div3{
-    margin-top: 20px;
+    margin-top: 30px;
     height: 370px;
     background: rgb(110, 56, 4); 
-    background: rgba(255, 255, 6, 0.39);
+    background: rgba(255, 168, 6, 0.582);
+}
+.div3{
+    margin-top: 30px;
+    height: 390px;
+    background: rgb(110, 56, 4); 
+    background: rgba(255, 168, 6, 0.582);
 }
 .color{
     color:rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.897); 
 }
 .center {
-    padding: 50px 0;
+    padding: 10px 0;
     
 }

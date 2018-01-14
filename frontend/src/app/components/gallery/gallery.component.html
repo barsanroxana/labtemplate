@@ -12,13 +12,14 @@
     </div>
         <ul id="thumbnailsList" *ngFor="let image of ( visibleImages | imageFilter:filterBy)">
             <li>
-                <div class="col-sm-4" >
+                <div class="col-sm-5" >
                     <div class="div1">
                                 <img src="{{image.url}}" class = "tn" width="210" height="170">
+                                <hr color="white" size="20" width="170%">
                     </div>
                 </div>
                       
-                <div class="col-sm-4" >
+                <div class="col-sm-5" >
                     <div class="div2">
                             <p class="text">
                                 {{image.numeProdus}}
@@ -35,3 +36,4 @@
         </ul>
 
     </div>
+
