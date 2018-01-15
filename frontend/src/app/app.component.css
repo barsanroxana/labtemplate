@@ -4,6 +4,7 @@ div.icons{
   width: 100%;
   align-content: center;
   margin-top: 1%;
+  -ms-high-contrast-adjust: 100%;
 }
 
 .fa:hover {
