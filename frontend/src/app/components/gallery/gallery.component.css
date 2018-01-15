@@ -12,7 +12,7 @@ li{
 	margin-bottom: 20px;
 	margin-right: 100px;
 	margin-left: 100px;
-	height: 950px;
+	height: 2900PX;
 	background: rgb(0, 0, 0); 
 	background: rgba(0, 0, 0, 0.6);
 	width: 80%;
@@ -35,4 +35,12 @@ li{
  width: 100%;
 	
 }
+.center {
+    padding: 50px 0;
+    
+}
+ .color{
+	background-color:  rgba(15, 104, 12, 0.678);
+ }
+
 
